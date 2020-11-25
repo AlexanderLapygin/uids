@@ -1,4 +1,4 @@
-# Various implementations of UID
+# Various implementations of UID (Unique Identifier)
 
 <br>
   <p align="center">

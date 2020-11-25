@@ -22,14 +22,7 @@
     "clean": "rimraf *.d.ts coverage dist",
     "lint": "concurrently yarn:lint:*",
     "lint:src": "eslint src --ext .ts --config ../../../.eslintrc",
-    "lint:types": "tsc --noEmit",
-    "test": "jest",
-    "test:integration": "jest --testPathPattern=ispec\\.ts$",
-    "test:coverage": "yarn test --coverage",
-    "pub:test": "yarn publish --access public"
-  },
-  "dependencies": {
-    "jest-mock-extended": "^1.0.10"
+    "lint:types": "tsc --noEmit"
   },
   "files": [
     "*.js",
@@ -37,7 +30,6 @@
     "dist"
   ],
   "keywords": [
-    "data structure",
     "uid",
     "typescript"
   ],

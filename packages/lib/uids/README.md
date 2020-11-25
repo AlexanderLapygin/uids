@@ -1,6 +1,6 @@
-# Welcome to the UIDs
+# Various implementations of UID (Unique Identifier)
 
-This is the core module of the uids monorepo.
+This module provides all implementations.
 
 <br>
   <p align="center">
@@ -13,7 +13,7 @@ This is the core module of the uids monorepo.
   </p>
 <br />
 
-## Installing DAGs
+## Installing UIDs
 
 To use UUID modules, all you need to do is install the `@uids/uids` package:
 

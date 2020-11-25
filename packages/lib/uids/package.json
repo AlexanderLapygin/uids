@@ -35,8 +35,8 @@
     "test:cov": "yarn test --coverage"
   },
   "dependencies": {
-    "@uids/uid-uuid": "^0.5.1",
-    "@uids/uid-nano": "^0.1.0"
+    "@uids/uid-uuid": "^0.x",
+    "@uids/uid-nano": "^0.x"
   },
   "keywords": [
     "typescript",
