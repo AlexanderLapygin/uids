@@ -11,7 +11,5 @@ import { UIDLocal } from '@dags/core'
 const uid1 = new UIDLocal()
 const uid2 = new UIDLocal()
 
-console.log(uid1)
-console.log(uid2)
-console.log(uid1.equals(uid2))
+console.log(uid1.equals(uid2)) // produces 'false'
 ```

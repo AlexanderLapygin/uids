@@ -36,13 +36,15 @@ At the moment, the library provides the following modules:
 - `uid-uuid`
 - `uid-nano`
 
-For example, you can use the `uids` module in semi-procedural style like this:
+For example, you can use the `uid-uuid` module like this:
 
 ```ts
 import { UUID } from '@uids/uid-uuid'
 
-const uid = new UUID()
-// TBD
+const uuid1 = new UUID()
+const uuid2 = new UUID()
+
+console.log(uuid1.equals(uuid2)) // produces 'false'
 ```
 
 ## License
