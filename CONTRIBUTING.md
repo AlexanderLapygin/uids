@@ -32,25 +32,25 @@ valuable. Here are few guidelines that should help you as you prepare your contr
 The following steps will get you setup to contribute changes to this repo:
 
 1. Fork the repo (click the <kbd>Fork</kbd> button at the top right of
-   [this page](https://https://github.com/AlexanderLapygin/xgloss))
+   [this page](https://https://github.com/AlexanderLapygin/uids))
 
 2. Clone your fork locally
 
 ```sh
 # in a terminal, cd to parent directory where you want your clone to be, then
-git clone https://github.com/<your_github_username>/xgloss.git
+git clone https://github.com/<your_github_username>/uids.git
 
-cd xgloss
+cd uids
 ```
 
-3. Setup all dependencies and build. XGloss uses `yarn` and `lerna`, so run `yarn prestart`. This
+3. Setup all dependencies and build. UIDs uses `yarn` and `lerna`, so run `yarn prestart`. This
    command will install dependencies and bootstrap the repo using `lerna`. Then the command
    `yarn build` will build all packages.
 
 ## Development
 
-To improve our development process, we've setup a couple of systems. XGloss uses a monorepo
-structure, this means each module has its own package and can be used independently.
+To improve our development process, we've setup a couple of systems. UIDs uses a monorepo structure,
+this means each module has its own package and can be used independently.
 
 ### Tooling
 
@@ -82,15 +82,15 @@ We're using [Lerna](https://lerna.js.org/) monorepo +
 [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) to manage installation of
 dependencies and running various scripts.
 
-Each component is named this way: `@xgloss/[module]`. Let's say we want to build the `x` module.
+Each component is named this way: `@uids/[module]`. Let's say we want to build the `x` module.
 Here's how to do it:
 
 ```bash
-yarn workspace @xgloss/x build
+yarn workspace @uids/x build
 
 # or
 
-lerna run build --scope @xgloss/x
+lerna run build --scope @uids/x
 ```
 
 **Shortcut:** To make this shorter and more convenient, we've added an alias for each module in the
@@ -114,7 +114,7 @@ running the command for all components.
 ## How to get started
 
 The simplest way to get started is to select some issue from
-[backlog](https://github.com/AlexanderLapygin/xgloss/projects/1) of this project.
+[backlog](https://github.com/AlexanderLapygin/uids/projects/1) of this project.
 
 ## Think you found a bug?
 
@@ -169,7 +169,7 @@ All commits that fix bugs or add features need a test.
 
 ### Steps to Pull Request
 
-1. Fork of the `xgloss` repository and clone your fork.
+1. Fork of the `uids` repository and clone your fork.
 2. Make the changes needed for your PR in the `master` branch.
 3. Make sure you cover all code changes with unit tests.
 4. Update [README.md](README.md) to reflect every relevant change.

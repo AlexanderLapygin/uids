@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "path": "packages/core/dist/esm/*.js",
+      "path": "packages/uids/dist/esm/*.js",
       "maxSize": "5 kB"
     }
   ]

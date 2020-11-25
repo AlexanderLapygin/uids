@@ -1,5 +1,5 @@
 /**
- * Unique identifier
+ * Required interface for UID
  */
 export interface UID {
   /**

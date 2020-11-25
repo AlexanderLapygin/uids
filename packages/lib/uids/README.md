@@ -1,4 +1,6 @@
-# Module providing various implementations of UID (Unique ID) interface
+# Welcome to the UIDs
+
+This is the core module of the uids monorepo.
 
 <br>
   <p align="center">
@@ -11,9 +13,9 @@
   </p>
 <br />
 
-## Installing UIDs
+## Installing DAGs
 
-To use UIDs modules, all you need to do is install the `@uids/uids` package:
+To use UUID modules, all you need to do is install the `@uids/uids` package:
 
 ```sh
 $ yarn add @uids/uids
@@ -27,17 +29,15 @@ $ npm install @uids/uids
 
 At the moment, the library exposes such modules:
 
-- `uuid`
-- `nano`
-- `local`
+- `uid-local`
+- `uid-nano`
+- `uid-uuid`
 
-For example, you can use the `uuid` module like this:
+For example, you can use the `uid-uuid` module like this:
 
 ```ts
-import { UUID } from '@uids/uuid'
+import { UUID } from '@uids/uid-uuid'
 
-const uuid1 = new UUID()
-const uuid2 = new UUID()
-
-console.log(uuid1.equals(uuid2)) // produces 'false'
+const uid = new UUID()
+//TBD
 ```

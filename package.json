@@ -3,8 +3,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/lib/*",
-      "packages/app/*"
+      "packages/lib/*"
     ]
   },
   "repository": {
@@ -67,7 +66,8 @@
     "yarn-deduplicate": "^3.0.0"
   },
   "keywords": [
-    "glossary",
+    "uid",
+    "uuid",
     "typescript"
   ],
   "license": "MIT"
