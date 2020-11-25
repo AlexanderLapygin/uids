@@ -1,6 +1,6 @@
 {
   "name": "@uids/uid-uuid",
-  "version": "0.5.1",
+  "version": "0.1.0",
   "description": "UID that is implemented as UUID",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

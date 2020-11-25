@@ -1,47 +1,48 @@
 {
-  "name": "@uids/uids",
+  "name": "@uids/uid-local",
   "version": "0.1.0",
-  "description": "Core module of the uids monorepo",
+  "description": "UID for local use implemented as a counter",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "typings": "dist/types/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/AlexanderLapygin/uids.git"
   },
-  "homepage": "https://github.com/AlexanderLapygin/uids/blob/master/packages/uids/README.md",
+  "homepage": "https://github.com/AlexanderLapygin/uids/blob/master/packages/uid-local/README.md",
   "author": "Alexander Lapygin <alexanderlapygin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "start": "nodemon --watch src --exec yarn build -e ts",
+    "prebuild": "npm run clean",
     "build": "concurrently yarn:build:*",
-    "test": "jest --env=jsdom --passWithNoTests",
-    "lint": "concurrently yarn:lint:*",
-    "lint:src": "eslint src --ext .ts --config ../../../.eslintrc",
-    "lint:types": "tsc --noEmit",
-    "version": "yarn build",
     "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts -d dist/esm --source-maps",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts -d dist/cjs --source-maps",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "test:cov": "yarn test --coverage"
+    "clean": "rimraf *.d.ts coverage dist",
+    "lint": "concurrently yarn:lint:*",
+    "lint:src": "eslint src --ext .ts --config ../../../.eslintrc",
+    "lint:types": "tsc --noEmit",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage",
+    "pub": "yarn build:release && yarn publish --access public"
   },
   "dependencies": {
-    "@uids/uid-uuid": "^0.x",
-    "@uids/uid-local": "^0.x",
-    "@uids/uid-nano": "^0.x"
+    "@uids/uid": "^0.x"
   },
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "dist"
+  ],
   "keywords": [
+    "counter",
+    "local",
     "typescript",
-    "uid",
-    "uuid"
-  ]
+    "uid"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
 }
