@@ -11,5 +11,5 @@ import { UIDNano } from '@uids/nano'
 const uid1 = new UIDNano()
 const uid2 = new UIDNano()
 
-console.log(uid1.equals(uid2)) // provides 'false'
+console.log(uid1.equals(uid2)) // produces 'false'
 ```
