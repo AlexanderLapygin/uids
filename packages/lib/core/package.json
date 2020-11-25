@@ -1,0 +1,42 @@
+{
+  "name": "@uids/core",
+  "version": "0.1.0",
+  "description": "Core module of the uids monorepo",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderLapygin/uids.git"
+  },
+  "homepage": "https://github.com/AlexanderLapygin/uids/blob/master/packages/core/README.md",
+  "author": "Alexander Lapygin <alexanderlapygin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "start": "nodemon --watch src --exec yarn build -e ts",
+    "build": "concurrently yarn:build:*",
+    "test": "jest --env=jsdom --passWithNoTests",
+    "lint": "concurrently yarn:lint:*",
+    "lint:src": "eslint src --ext .ts --config ../../../.eslintrc",
+    "lint:types": "tsc --noEmit",
+    "version": "yarn build",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .ts -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .ts -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "test:cov": "yarn test --coverage"
+  },
+  "dependencies": {},
+  "keywords": [
+    "glossary",
+    "typescript"
+  ]
+}

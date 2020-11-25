@@ -1,0 +1,8 @@
+{
+  "files": [
+    {
+      "path": "packages/core/dist/esm/*.js",
+      "maxSize": "5 kB"
+    }
+  ]
+}
