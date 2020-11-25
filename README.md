@@ -37,7 +37,7 @@ For example, you can use the `uids` module in semi-procedural style like this:
 ```ts
 import { UUID } from '@uids/uid-uuid'
 
-const uids = new UUID()
+const uid = new UUID()
 // TBD
 ```
 
