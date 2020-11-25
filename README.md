@@ -18,7 +18,7 @@ Various UID implementations via unified interface.
 To use UIDs modules, all you need to do is install the `@uids/core` package:
 
 ```sh
-$ yarn add @uids/core
+$ yarn add @uids/uid
 
 # or
 
@@ -29,15 +29,17 @@ $ npm install @uids/core
 
 At the moment, the library provides the following modules:
 
-- `uids`
-- ...
+- `uid`
+- `uid-local`
+- `uid-uuid`
+- `uid-nano`
 
 For example, you can use the `uids` module in semi-procedural style like this:
 
 ```ts
-import { UIDs } from '@uids/core'
+import { UIDNano } from '@uids/uid'
 
-const uids = new UIDs()
+const uids = new UIDNano()
 // TBD
 ```
 

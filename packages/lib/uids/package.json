@@ -1,7 +1,7 @@
 {
-  "name": "@uids/core",
+  "name": "@uids/uids",
   "version": "0.1.0",
-  "description": "Core module of the uids monorepo",
+  "description": "Module providing various implementations of UID (Unique ID) interface",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/AlexanderLapygin/uids.git"
   },
-  "homepage": "https://github.com/AlexanderLapygin/uids/blob/master/packages/core/README.md",
+  "homepage": "https://github.com/AlexanderLapygin/uids/blob/master/packages/uids/README.md",
   "author": "Alexander Lapygin <alexanderlapygin@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "dependencies": {},
   "keywords": [
-    "glossary",
+    "uid",
     "typescript"
   ]
 }
