@@ -1,5 +1,6 @@
 {
   "name": "uids",
+  "description": "Various implementations of UID (Unique IDentifier)",
   "private": true,
   "workspaces": {
     "packages": [

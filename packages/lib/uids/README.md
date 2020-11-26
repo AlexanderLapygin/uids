@@ -1,4 +1,4 @@
-# Various implementations of UID (Unique Identifier)
+# Various implementations of UID (Unique IDentifier)
 
 This module provides all implementations.
 
